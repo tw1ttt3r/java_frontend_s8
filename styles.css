@@ -1,0 +1,63 @@
+.container-image {
+  width: 500px;
+  height: 500px;
+  animation-name: turnimage;
+  /* animation-duration: 6s;
+  animation-iteration-count: 5; */
+}
+
+.container-image > img{
+  width: 100%;
+  height: 100%;
+}
+
+.container-image > img:hover{
+  border-radius: 50%;
+}
+
+/* definir la animación */
+@keyframes changecolorbackground {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* definir la animación */
+@keyframes turnimage {
+  0% {
+    transform: rotate(0deg);
+    width: 100%;
+  }
+
+  25% {
+    transform: rotate(90deg);
+    width: 75%;
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+    width: 50%;
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* asignación de la animación */
+.baseElement {
+  width: 300px;
+  height: 250px;
+  background-color: red;
+}
+
+.baseElement:hover {
+  animation-name: changecolorbackground;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
