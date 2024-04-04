@@ -73,7 +73,7 @@ nav > ul {
 ul > li:hover {
   cursor: pointer;
   animation-name: changecolortextin;
-  animation-duration: 2s;
+  animation-duration: 6s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -100,7 +100,8 @@ ul > li:not(:hover) {
 }
 
 .container-image > img:hover {
-  border-radius: 50%;
+  animation-name: turnimage;
+  animation-duration: 6s;
 }
 
 /* asignación de la animación */
